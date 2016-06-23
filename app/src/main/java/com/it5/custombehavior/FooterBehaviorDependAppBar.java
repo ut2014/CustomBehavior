@@ -16,12 +16,14 @@ public class FooterBehaviorDependAppBar extends CoordinatorLayout.Behavior<View>
         super(context, attrs);
     }
 
+    //指绑定到指定的view上
     @Override
     public boolean layoutDependsOn(CoordinatorLayout parent, View child, View dependency) {
         return dependency instanceof AppBarLayout;
     }
 
 
+    //当指定的View发生更变时触发
     @Override
     public boolean onDependentViewChanged(CoordinatorLayout parent, View child, View dependency) {
         float translationY = Math.abs(dependency.getTranslationY());

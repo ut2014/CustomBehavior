@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-
     <android.support.design.widget.AppBarLayout
+        app:layout_behavior="com.it5.custombehavior.FooterBehaviorDependAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <android.support.v7.widget.Toolbar
